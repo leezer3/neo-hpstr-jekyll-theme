@@ -17,5 +17,4 @@
   "undef": true,
   "multistr": true,
   "expr": true,
-  "globals": {"SimpleJekyllSearch": true}
 }

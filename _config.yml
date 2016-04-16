@@ -1,14 +1,14 @@
-title:            Blog Title
-description:      Describe your website here.
+title:            openBVE
+description:      The openBVE Project Homepage
 # put your disqus here
 disqus_shortname: 
-reading_time:     true # if true, shows the estimated reading time for a post
+reading_time:     false # if true, shows the estimated reading time for a post
 words_per_minute: 200
 logo:             images/logo.png # logo visible in the topbar
 # Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
 # When testing locally leave blank or use http://localhost:4000
 
-url: http://aronbordin.com/neo-hpstr-jekyll-theme
+#url: http://aronbordin.com/neo-hpstr-jekyll-theme
 
 # draw your top menu here
 # each item must have a title and a url.
@@ -16,36 +16,45 @@ url: http://aronbordin.com/neo-hpstr-jekyll-theme
 #   To create sub categories. add a submenu item
 # See the example
 menu:
-  - title: 'Home'
-    url: '/'
-  - title: 'Fork'
-    url: 'http://github.com/aron-bordin/neo-hpstr-jekyll-theme'
+  - title: 'Download'
+    url: '/download/'
+    submenu:
+      - title: 'Download openBVE'
+        url: '/install/'
+      - title: 'Source Code'
+        url: 'http://github.com/leezer3/OpenBVE/'
   - title: 'Install'
-    url: '/theme-setup/'
-  - title: 'Tags'
-    url: '/tags'
-  - title: 'Categories'
-    url: '/categories'
-    type: 'categories'
-  - title: 'Favorites'
     url: '#'
     submenu:
-      - title: 'Code Highlighter'
-        url: '/intro/code-highlighting-post/'
-      - title: 'Sample Post'
-        url: '/intro/sample-post/'
+      - title: 'Installing openBVE'
+        url: '/install/'
+      - title: 'Installing Addons'
+        url: '/install-addons/'
+  - title: 'Play'
+    url: '#'
+    submenu:
+      - title: 'Basic Controls'
+        url: '/play/'
+      - title: 'Japanese Signals and Signs'
+        url: '/play-japanese/'
+      - title: 'British Signals and Signs'
+        url: '/play-british/'
+  - title: 'Developing Addons'
+    url: '/creating-addons/'
+  - title: 'Roadmap'
+    url: '/roadmap/'
+  - title: 'Discussion Board'
+    url: 'http://bveworldwide.unlimitedboard.com/f14-the-sim-in-time-general-discussion'
 
 # Owner/author information
 owner:
-  name:           Your name
+  name:           The openBVE Project
   site:           http://aronbordin.com
   avatar:         images/avatar.jpg
   bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
   email:          you@email.com
-  # Twitter nick for use in Twitter cards and follow button.
-  twitter: aron_bordin # if no twitter in this config, the twitter follow button will be removed
   # GitHub nick for use in follow button in author block.
-  github: aron-bordin
+  github: leezer3
 
 # Twitter account associated with the site if different from owner/author twitter account.
 # Used in Twitter cards.
@@ -54,11 +63,7 @@ twitter:
 # Social networking links used in author block underneath posts. Update and remove as you like.
 social:
   - title: "github"
-    url: "https://github.com/aron-bordin"
-  - title: "linkedin"
-    url: "https://br.linkedin.com/in/aronbordin"
-  - title: "youtube"
-    url: "https://www.youtube.com/channel/UCfnSek-9HPWOx5e2pH7VFgg"
+    url: "https://github.com/leezer3/OpenBVE"
 # Background image to be tiled on all pages
 background:
 
@@ -69,10 +74,10 @@ google_verify:
 bing_verify:
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
-locale:      en_US
+timezone:    Europe/London
+locale:      en_GB
 future:      true
-highlighter: rouge
+highlighter: pygments
 markdown:    kramdown
 gems:
   - jekyll-sitemap
@@ -86,8 +91,6 @@ permalink:   /:categories/:title/
 # Amount of post to show on home page
 paginate: 5
 
-# if true, shows the floatting share buttons
-float_share: true
 
 kramdown:
   auto_ids: true

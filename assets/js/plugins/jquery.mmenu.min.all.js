@@ -97,12 +97,7 @@ function(n){var a="mmenu",e="navbars",t="next";n[a].addons[e][t]=function(t){var
  *
  * Copyright (c) Fred Heusschen
  */
-function(n){var a="mmenu",e="navbars",t="prev";n[a].addons[e][t]=function(t){var r=n[a]._c;t.append('<a class="'+r.prev+" "+r.btn+'" href="#"></a>'),this.bind("init",function(n){n.removeClass(r.hasnavbar)});var i=function(){var n=this.$menu.children("."+r.current),a=t.find("."+r.prev),i=n.find("."+this.conf.classNames[e].panelPrev);i.length||(i=n.children("."+r.navbar).children("."+r.prev));var s=i.attr("href"),c=i.html();a[s?"attr":"removeAttr"]("href",s),a[s||c?"removeClass":"addClass"](r.hidden),a.html(c)};this.bind("openPanel",i),this.bind("init",i)}}(jQuery),/*	
- * jQuery mmenu navbar addon searchfield content
- * mmenu.frebsite.nl
- *
- * Copyright (c) Fred Heusschen
- */
+
 function(n){var a="mmenu",e="navbars",t="searchfield";n[a].addons[e][t]=function(e){var t=n[a]._c,r=n('<div class="'+t.search+'" />').appendTo(e);"object"!=typeof this.opts.searchfield&&(this.opts.searchfield={}),this.opts.searchfield.add=!0,this.opts.searchfield.addTo=r}}(jQuery),/*	
  * jQuery mmenu navbar addon title content
  * mmenu.frebsite.nl
